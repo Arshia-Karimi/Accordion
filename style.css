@@ -1,0 +1,46 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.accordion {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+
+.accordion::after {
+  content: "\00276F";
+  transform: rotate(90deg);
+  float: right;
+  margin-left: 5px;
+  transition: all 0.5s;
+}
+
+.active::after {
+  content: "\00276F";
+  transform: rotate(270deg);
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  color: black;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
