@@ -1,5 +1,4 @@
 const acc = document.querySelectorAll(".accordion");
-const panel = document.querySelectorAll(".panel");
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", () => {
@@ -13,3 +12,4 @@ for (let i = 0; i < acc.length; i++) {
     }
   });
 }
+ q
